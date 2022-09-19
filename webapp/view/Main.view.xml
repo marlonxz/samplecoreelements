@@ -1,0 +1,22 @@
+<mvc:View controllerName="ui5.samplecoreelements.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <TileContainer
+                id="container"
+                tileDelete="handleTileDelete"
+                tiles="{localModel>/TileCollection}">
+                <StandardTile
+                    icon="{localModel>icon}"
+                    type="{localModel>type}"
+                    number="{localModel>number}"
+                    numberUnit="{localModel>numberUnit}"
+                    title="{localModel>title}"
+                    info="{localModel>info}"
+                    infoState="{localModel>infoState}" 
+                    press="goToOverview"/>
+            </TileContainer>
+        </content>
+    </Page>
+</mvc:View>
