@@ -7,10 +7,9 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("ui5.samplecoreelements.controller.materialOverView", {
+        return Controller.extend("ui5.samplecoreelements.controller.materialInspection", {
             onInit: function () {
 
             }
-		
         });
     });

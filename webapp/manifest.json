@@ -72,6 +72,10 @@
       "localModel": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/data.json"
+      },
+      "globalModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/dataOverView.json"
       }
     },
     "resources": {
@@ -103,6 +107,11 @@
             "name": "materialoverview",
             "pattern": "materialoverview",
             "target": "materialoverview"
+        },
+        {
+            "pattern": "materialInspection",
+            "name": "materialInspection",
+            "target":"materialInspection"
         }
       ],
       "targets": {
@@ -111,14 +120,24 @@
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "Main",
-          "viewName": "Main"
+          "viewName": "Main",
+          "viewLevel": 1
         },
         "materialoverview": {
             "viewType": "XML",
             "transition": "slide",
             "clearControlAggregation": false,
             "viewId": "materialoverview",
-            "viewName": "materialOverView"
+            "viewName": "materialOverView",
+            "viewLevel": 2
+        },
+        "materialInspection":{
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewName": "materialInspection",
+            "viewId":"materialInspectionID",
+            "viewLevel": 2
         }
       }
     },
